@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #28a745;
+    --primary: #13882f;
     --light: #E8F5E8;
     --dark: #0F172B;
 }
@@ -353,7 +353,7 @@
     font-size: 30px;
     font-weight: normal;
     color: #FFFFFF;
-    background: #000000;
+    background: #000000b5;
     opacity: 1;
 }
 
