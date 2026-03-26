@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restaurent- Home</title>
+    <title>Restaurant Management System - FOE UOR</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <meta content="Restaurant, Food, Dining, Booking" name="keywords">
+    <meta content="Restaurant Management System with online booking, user authentication, and contact forms" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -14,7 +14,6 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
@@ -43,11 +42,10 @@
         </div>
         <!-- Spinner End -->
 
-
-        <!-- Navbar & Hero Start -->
+        <!-- Navbar Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
+                <a href="javascript:void(0)" onclick="showPage('home')" class="navbar-brand p-0">
                     <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>FOE UOR</h1>
                     <img src="img/logo.png" alt="Logo">
                 </a>
@@ -56,31 +54,29 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="menu.html" class="nav-item nav-link">Menu</a>
-                        
+                        <a href="javascript:void(0)" onclick="showPage('home')" class="nav-item nav-link active" id="nav-home">Home</a>
+                        <a href="javascript:void(0)" onclick="showPage('about')" class="nav-item nav-link" id="nav-about">About</a>
+                        <a href="javascript:void(0)" onclick="showPage('service')" class="nav-item nav-link" id="nav-service">Service</a>
+                        <a href="javascript:void(0)" onclick="showPage('menu')" class="nav-item nav-link" id="nav-menu">Menu</a>
+
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
-                                <a href="booking.html" class="dropdown-item">Booking</a>
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                                <a href="javascript:void(0)" onclick="showPage('booking')" class="dropdown-item">Booking</a>
+                                <a href="javascript:void(0)" onclick="showPage('team')" class="dropdown-item">Our Team</a>
+                                <a href="javascript:void(0)" onclick="showPage('testimonial')" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="javascript:void(0)" onclick="showPage('contact')" class="nav-item nav-link" id="nav-contact">Contact</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Login</a>
                             <div class="dropdown-menu m-0">
-                                
-                                <a href="Login.html" class="dropdown-item">Login</a> 
-                                <a href="Signup.html" class="dropdown-item">Signup</a> 
+                                <a href="javascript:void(0)" onclick="showPage('login')" class="dropdown-item">Login</a>
+                                <a href="javascript:void(0)" onclick="showPage('signup')" class="dropdown-item">Signup</a>
                             </div>
                         </div>
                     </div>
-                    
-                    <a href="booking.html" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="javascript:void(0)" onclick="showPage('booking')" class="btn btn-primary py-2 px-4">Book A Table</a>
                 </div>
             </nav>
 
@@ -100,6 +96,9 @@
             </div>
         </div>
         <!-- Navbar & Hero End -->
+
+        <!-- Page Sections Container -->
+        <div id="home-section" class="page-section active">
 
 
         <!-- Service Start -->
@@ -571,9 +570,9 @@
             </div>
         </div>
         <!-- Testimonial End -->
+        </div>
 
-
-        <!-- Footer Start -->
+        <!-- Footer Start (Common to all pages) -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
                 <div class="row g-5">
@@ -640,6 +639,234 @@
         </div>
         <!-- Footer End -->
 
+        <!-- About Section -->
+        <div id="about-section" class="page-section">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row g-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="row g-3">
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg">
+                                </div>
+                                <div class="col-6 text-start">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg" style="margin-top: 25%;">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
+                                </div>
+                                <div class="col-6 text-end">
+                                    <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
+                            <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restaurant</h1>
+                            <p class="mb-4">We take pride in offering a fine dining experience with a unique blend of flavors, exquisite recipes, and high-quality ingredients. Our goal is to serve delicious food that creates unforgettable memories.</p>
+                            <p class="mb-4">With a passion for culinary excellence, our expert chefs bring creativity and expertise to every dish. We are committed to using the freshest ingredients and maintaining the highest standards of hygiene and taste.</p>
+                            <div class="row g-4 mb-4">
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
+                                        <div class="ps-4">
+                                            <p class="mb-0">Years of</p>
+                                            <h6 class="text-uppercase mb-0">Experience</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                        <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
+                                        <div class="ps-4">
+                                            <p class="mb-0">Popular</p>
+                                            <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Booking Section -->
+        <div id="booking-section" class="page-section">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Book A Table</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Booking</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row g-0">
+                    <div class="col-md-6">
+                        <div class="video">
+                            <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 bg-dark d-flex align-items-center">
+                        <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
+                            <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
+                            <h1 class="text-white mb-4">Book A Table Online</h1>
+                            <form id="bookingForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                            <label for="name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                            <label for="email">Your Email</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating date" id="date3" data-target-input="nearest">
+                                            <input type="text" class="form-control datetimepicker-input" id="date" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required />
+                                            <label for="date">Date & Time</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <select class="form-select" id="select1" required>
+                                                <option value="1">People 1</option>
+                                                <option value="2">People 2</option>
+                                                <option value="3">People 3</option>
+                                                <option value="4">People 4</option>
+                                                <option value="5">People 5</option>
+                                                <option value="6">People 6</option>
+                                            </select>
+                                            <label for="select1">No Of People</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                            <label for="message">Special Request</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Section -->
+        <div id="login-section" class="page-section">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Login</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Login</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="bg-dark rounded p-5">
+                                <h2 class="text-center text-white mb-4">Login to Your Account</h2>
+                                <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+                                <form id="loginForm">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 py-3">Login</button>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <p class="text-white">Don't have an account? <a href="javascript:void(0)" onclick="showPage('signup')" class="text-primary">Sign up here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Signup Section -->
+        <div id="signup-section" class="page-section">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Sign Up</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)" onclick="showPage('home')">Home</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Signup</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="container-xxl py-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                            <div class="bg-dark rounded p-5">
+                                <h2 class="text-center text-white mb-4">Create Your Account</h2>
+                                <div id="error-message" class="alert alert-danger" style="display: none;"></div>
+                                <form id="signupForm">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="username" placeholder="Username" required>
+                                        <label for="username">Username</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                        <label for="password">Password</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password" required>
+                                        <label for="confirmPassword">Confirm Password</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary w-100 py-3">Sign Up</button>
+                                </form>
+                                <div class="text-center mt-3">
+                                    <p class="text-white">Already have an account? <a href="javascript:void(0)" onclick="showPage('login')" class="text-primary">Login here</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -656,6 +883,45 @@
     <script src="lib/tempusdominus/js/moment.min.js"></script>
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- SPA Navigation Script -->
+    <script>
+        // Single Page Application Navigation
+        function showPage(pageName) {
+            // Hide all page sections
+            const sections = document.querySelectorAll('.page-section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Remove active class from all nav links
+            const navLinks = document.querySelectorAll('.nav-item.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+
+            // Show the selected page section
+            const targetSection = document.getElementById(pageName + '-section');
+            if (targetSection) {
+                targetSection.classList.add('active');
+            }
+
+            // Update navigation active state
+            const targetNav = document.getElementById('nav-' + pageName);
+            if (targetNav) {
+                targetNav.classList.add('active');
+            }
+
+            // Scroll to top for better UX
+            window.scrollTo(0, 0);
+        }
+
+        // Initialize SPA on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show home page by default
+            showPage('home');
+        });
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

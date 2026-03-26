@@ -13,6 +13,15 @@
     background-color: #E8F5E8 !important;
 }
 
+/* Single Page Application Styles */
+.page-section {
+    display: none;
+}
+
+.page-section.active {
+    display: block;
+}
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
